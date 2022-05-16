@@ -1,5 +1,7 @@
 body {
-  background: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/RgsmNWT/background-Yellow-minimalist-life-quote-Twitter-Header-1280-720-px.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

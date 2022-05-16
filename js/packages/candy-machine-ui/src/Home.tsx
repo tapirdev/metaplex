@@ -37,7 +37,8 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: #b4bc94;
+  box-shadow: 0 0 5px #b4bc94, 0 0 10px #b4bc94, 0 0 10px #b4bc94;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -476,15 +477,28 @@ const Home = (props: HomeProps) => {
     })();
   }, [refreshCandyMachineState]);
 
+  const KidzImg = styled('img')`
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 30px;
+    border-radius: 5%;
+  `;
+
   return (
     <Container style={{ marginTop: 100 }}>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <KidzImg src="/kidz.gif" alt="kdz" />
         <Paper
           style={{
-            padding: 24,
-            paddingBottom: 10,
-            backgroundColor: '#151A1F',
-            borderRadius: 6,
+            padding: 20,
+            paddingBottom: 8,
+            background: '#909775',
+            boxShadow: '0 0 5px #909775, 0 0 10px #909775, 0 0 50px #909775',
+            borderRadius: 5,
           }}
         >
           {!wallet.connected ? (
@@ -697,9 +711,12 @@ const Home = (props: HomeProps) => {
             variant="caption"
             align="center"
             display="block"
-            style={{ marginTop: 7, color: 'grey' }}
+            style={{ marginTop: 7, color: 'black' }}
           >
-            Powered by METAPLEX
+            Developed by{' '}
+            <a href="https://solking.tech/" style={{ color: 'white' }}>
+              SolKing
+            </a>
           </Typography>
         </Paper>
       </Container>
